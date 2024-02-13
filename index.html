@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.0.3/jquery.cycle.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.14/lottie.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css" integrity="sha512-gb1oLK4TqRvFsYWrPLwP2hBiPt1sk2hm6r4I/VObk+J8jaVqmrZa7mxWKvFQyxUBZLLMj/3tkWjI5iQN3LjJyw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <div class="nav_bar">
+            <div class="logo">
+                <a href=""><img src="assets/logo-dark.svg" alt=""></a>
+            </div>
+            <div class="nav_menu">
+                <div class="nav_link">
+                    <a href="">home</a>
+                </div>
+
+                <div class="nav_link">
+                    <a href="">about</a>
+                </div>
+                <div class="nav_link">
+                    <a href="">service</a>
+                </div>
+
+                <div class="nav_link">
+                    <a href="">show Case</a>
+                </div>
+
+                <div class="nav_link">
+                    <a href="">insights</a>
+                </div>
+ 
+                <div class="nav_link">
+                    <!-- <a href="">  <button style="--clr:#34afa9"><span>contact</span><i></i></button></a> -->
+                    <a href=""><button>contact</button></a>
+
+                </div>
+            </div>
+        </div>
+        <div class="mob_nav">
+            <div class="mob_header">
+                <div class="logo">
+                    <a href=""><img src="assets/logo-dark.svg" alt=""></a>
+                </div>
+                <div class="hamburger">
+                      
+                      <div class="plate plate4" onclick="this.classList.toggle('active')">
+                        <svg class="burger" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+                          <path class="line line1" d="M 50,35 H 30" />
+                          <path class="line line2" d="M 50,35 H 70" />
+                          <path class="line line3" d="M 50,50 H 30" />
+                          <path class="line line4" d="M 50,50 H 70" />
+                          <path class="line line5" d="M 50,65 H 30" />
+                          <path class="line line6" d="M 50,65 H 70" />
+                        </svg>
+                        <svg class="x" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+                          <path class="line" d="M 34,32 L 66,68" />
+                          <path class="line" d="M 66,32 L 34,68" />
+                        </svg>
+                      </div>
+                      
+                </div>
+                
+        </div>
+            <div class="nav">
+                <div class="nav_menu">
+                    <div class="nav_link ">
+                        <a href="">home</a>
+                    </div>
+    
+                    <div class="nav_link">
+                        <a href="">about</a>
+                    </div>
+                    <div class="nav_link">
+                        <a href="">service</a>
+                    </div>
+    
+                    <div class="nav_link">
+                        <a href="">show Case</a>
+                    </div>
+    
+                    <div class="nav_link">
+                        <a href="">insights</a>
+                    </div>
+     
+                    <div class="nav_link">
+                        <!-- <a href="">  <button style="--clr:#34afa9"><span>contact</span><i></i></button></a> -->
+                        <a href=""><button>contact</button></a>
+    
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="background_image">
+                <img src="assets/welcome.jpg" alt="">
+            </div>
+            <div class="banner_wrapper">
+                <div class="inner_container">
+                    <div class="left_column">
+                            <h1 class="heading">we make mobile app</h1> 
+                            <p class="text">that launch startups</p>
+                    </div>
+
+                    <div class="right_column">
+                        <div class="lottie_animation" id ="lottie_animation">
+                    </div>
+                </div>
+            </div>
+            <div class="overlay">
+                <img src="assets/bg-bottom.svg" alt="">
+            </div>
+        </section>
+
+     
+
+        <section class="two_column_section">
+            <div class="wrapper">
+                <div class="inner_container">
+                    <div class="left_column">
+                        <div class="heading">
+                            <h2>relentlesly <span>innovating</span></h2>
+                        </div>
+                        <div class="text">
+                            <p>Pushing the boundaries of what digital products can do by harnessing cutting-edge technologies. From leveraging AI tech like ChatGPT, to incorporating AR functionality, to advanced integrations like ERP systems, we build and keep your solution at the forefront.</p>
+                        </div>
+                        <div class="booking_button">
+                            <button>Development Services</button>
+                        </div>
+                    </div>
+                    <div class="right_column">
+                        <div class="lottie_animation" id ="lottie_animation_two_column_section">
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="process_section" class="process_section">
+            <div class="wrapper">
+          
+              <div id="process_tab" class="tab-content active">
+                <div class="flex-row">
+                  <div class="left-list">
+                    <ol id="nav">
+                      <li class="active">
+                        <p><span>1.</span> Strategy</p>
+                        <p class="step_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, impedit?</p>
+                    </li>
+                      <li>
+                        <p><span>2.</span>Design</p>
+                        <p class="step_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, impedit?</p>
+                    </li>
+                      <li>
+                        <p><span>3.</span>Development</p>
+                        <p class="step_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, impedit?</p>
+                    </li>
+                      <li>
+                        <p><span>4.</span>Evolution</p>
+                        <p class="step_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, impedit?</p>
+                    </li>
+                      <li>
+                        <p><span>5.</span>Deployment</p>
+                        <p class="step_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt, impedit?</p>
+                    </li>
+                    </ol>
+                  </div>
+          
+          
+                  <div class="right-image">
+                    <img class="visi-hidden" src="https://i.postimg.cc/2yc954Vj/phone-bg.png" alt="">
+          
+                    <div class="overflow">
+                      <ul id="slideshow">
+                        <li data-id="0" class="active"><img src="https://i.postimg.cc/8cPnDykn/slide-2.png" alt=""></li>
+                        <li data-id="1"><img src="https://i.postimg.cc/8cPnDykn/slide-2.png" alt=""></li>
+                        <li data-id="2"><img src="https://i.postimg.cc/8cPnDykn/slide-2.png" alt=""></li>
+                        <li data-id="3"><img src="https://i.postimg.cc/8cPnDykn/slide-2.png" alt=""></li>
+                        <li data-id="4"><img src="https://i.postimg.cc/8cPnDykn/slide-2.png" alt=""></li>
+                      </ul>
+                    </div>
+          
+                    <span id="prev" class="arrow arrow-left"></span>
+                    <span id="next" class="arrow arrow-right"></span>
+                  </div>
+          
+                </div>
+          
+              </div>
+          
+          
+            </div>
+         
+
+    </section>
+
+        <section class="image_text_section">
+            <div class="wrapper">
+                <div class="inner_container">
+                    <div class="column_1">
+                        <img src="assets/651d9925d79d87e4e0ae871a_main.png" alt="">
+                    </div>
+                    <div class="column_2">
+                        <p class="text">With roots at one of the world’s top universities, that same high level of excellence is found in our entire Product, Creative and Engineering teams.</p>
+                        <button class="btn">Learn More About Us</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+    <section class="feature_text_section">
+        <div class="wrap_feature_text_section">
+            <div class="inner_container">
+                <div class="text">
+                    <p>we are <span>Top 10 Mobile App Firm</span> in the US</p>
+                </div>
+                <div class="text">
+                    <p>But what really matters to us is what our clients say...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="testimonial_section">
+        <div class="wrap_testimonial_section">
+            <div class="inner_container">
+                <div class="testemonial">
+                    <div class="star">
+                        <img src="assets/vecteezy_5-star-rating-review-star-png-transparent_9663927.png" alt="">
+                    </div>
+                    <div class="review">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias saepe, laudantium praesentium fuga suscipit tempora.</p>
+                    </div>
+                    <div class="user_detail">
+                        <div class="user_img">
+                            <img src="assets/—Pngtree—the young man with a_5297353.png" alt="">
+                        </div>
+                        <div>
+                            <div class="name">
+                                <h3>Greg Burns</h3>
+                            </div>
+                            <div class="post">
+                                <p>co-founder & CEO</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="testemonial">
+                    <div class="star">
+                        <img src="assets/vecteezy_5-star-rating-review-star-png-transparent_9663927.png" alt="">
+                    </div>
+                    <div class="review">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias saepe, laudantium praesentium fuga suscipit tempora.</p>
+                    </div>
+                    <div class="user_detail">
+                        <div class="user_img">
+                            <img src="assets/—Pngtree—the young man with a_5297353.png" alt="">
+                        </div>
+                        <div>
+                            <div class="name">
+                                <h3>Greg Burns</h3>
+                            </div>
+                            <div class="post">
+                                <p>co-founder & CEO</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="testemonial">
+                    <div class="star">
+                        <img src="assets/vecteezy_5-star-rating-review-star-png-transparent_9663927.png" alt="">
+                    </div>
+                    <div class="review">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias saepe, laudantium praesentium fuga suscipit tempora.</p>
+                    </div>
+                    <div class="user_detail">
+                        <div class="user_img">
+                            <img src="assets/—Pngtree—the young man with a_5297353.png" alt="">
+                        </div>
+                        <div>
+                            <div class="name">
+                                <h3>Greg Burns</h3>
+                            </div>
+                            <div class="post">
+                                <p>co-founder & CEO</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="testemonial">
+                     <div class="star">
+                        <img src="assets/vecteezy_5-star-rating-review-star-png-transparent_9663927.png" alt="">
+                    </div>
+                    <div class="review">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias saepe, laudantium praesentium fuga suscipit tempora.</p>
+                    </div>
+                    <div class="user_detail">
+                        <div class="user_img">
+                            <img src="assets/—Pngtree—the young man with a_5297353.png" alt="">
+                        </div>
+                        <div>
+                            <div class="name">
+                                <h3>Greg Burns</h3>
+                            </div>
+                            <div class="post">
+                                <p>co-founder & CEO</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="mobile_slider">
+        <div class="wrap_mobile_slider">
+            <div class="inner_container">
+                <div class="swiper-container owl-screenshot">
+                    <div class="mobile-screen-image"></div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="service-widget">
+                                <div class="post-media">
+                                    <a href="assets/uploads/one.png"></a>
+                                    <img src="assets/uploads/one.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-widget">
+                                <div class="post-media">
+                                    <a href="assets/uploads/two.png"></a>
+                                    <img src="assets/uploads/two.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-widget">
+                                <div class="post-media">
+                                    <a href="assets/uploads/three.png"></a>
+                                    <img src="assets/uploads/three.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-widget">
+                                <div class="post-media">
+                                    <a href="assets/uploads/four.png"></a>
+                                    <img src="assets/uploads/four.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="service-widget">
+                                <div class="post-media">
+                                    <a href="assets/uploads/five.png"></a>
+                                    <img src="assets/uploads/five.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next">
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="fa fa-angle-left"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    
+    
+
+    </main>
+
+    <footer>
+        <div class="footer_wrapper">
+            <div class="inner_container">
+                <div class="left_column">
+                    <h2 class="heading">let us guide through your next project</h2>
+                    <p class="text">we look forward to speek with you</p>
+                    <div class="contact_detail">
+                        <div>
+                            <div class="phone_no"><a href="tel:+14244652525" class="link-5">424.465.2525</a></div>
+                            <div class="email"><a href="mailto:info@swensonhe.com" class="link-6">info@swensonhe.com</a></div>
+                        </div>
+                        <div class="address">
+                            <h3>Los Angeles, CA</h3>
+                            <p>407 N Maple Drive, Ground 1 <br> Beverly Hills, CA  90210</p>
+                        </div>
+                        <div class="address">
+                            <h3>Dallas, TX</h3>
+                            <p>17250 Dallas Pkwy <br> Dallas, TX 75248</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right_column">
+                    <form action="" method="get">
+                        <div class="name row">
+                            <input type="text" placeholder="First Name" name="first_name">
+                            <input type="text" placeholder="Last Name"name="last_name">
+                        </div>
+                        <div class="contact row">
+                            <input type="email" name="email" id="client_email" placeholder="Email">
+                            <input type="tel" name="contact_no" id="client_contact_no" placeholder="Phone Number">
+                        </div>
+                        <div class="field row">
+                            <div class="option">
+                                <input type="radio" name="field" id="field" value="mobile/web">
+                            
+                                <label for="mobile/web">mobile/web</label>
+                            </div>
+        
+                            <div class="option">
+                                <input type="radio" name="field" id="field" value="opportunities">
+                                <label for="opportunities">opportunities</label>
+                            </div>
+        
+                            <div class="option">
+                                <input type="radio" name="field" id="field" value="other">
+                            <label for="other">other</label>
+                            </div>
+                            
+                        </div>
+                        <div class="message row">
+                            <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                        </div>
+                        <div class="file">
+                            <label for="file-upload" class="upload-button">
+                                Upload File
+                            </label>
+                            <input id="file-upload" type="file"/>
+                            
+                        </div>
+                        <div class="submit_button">
+                            <label for="file-upload" class="upload-button">
+                                Get In Touch
+                            </label>
+                            <input type="submit" value="Submit">
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+       
+
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
