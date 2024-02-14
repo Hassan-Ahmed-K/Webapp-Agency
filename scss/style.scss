@@ -6,7 +6,7 @@ $font: 'Mulish', sans-serif;
 $base-font-size: 1rem;
 
 // body{
-//   overflow: hidden;
+//   back
 // }
 
 *{
@@ -22,6 +22,5 @@ $base-font-size: 1rem;
     font-family: $font;
   }
 @import "pages/_home.scss";
-@import "pages/_process.scss";
-@import "pages/_banner.scss";
 @import "pages/slider.scss";
+@import "pages/about.scss";

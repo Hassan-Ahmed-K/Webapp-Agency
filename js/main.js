@@ -18,16 +18,16 @@ $(document).ready(function() {
       // Change the background color of the header
       $('header').css('background-color', '#fff');
       $('.nav_bar .nav_menu .nav_link a').css('color', '#000');
-      $('.nav_bar .nav_menu .nav_link a button').css('border-color', '#000');
-      $('.nav_bar .nav_menu .nav_link a button').css('color', '#000');
+      $('.nav_bar .nav_menu .nav_link button').css('border-color', '#000');
+      $('.nav_bar .nav_menu .nav_link button').css('color', '#000');
       $('.hamburger .line').css('stroke', '#000');
 
     } else {
       // Revert back to the default background color
       $('header').css('background-color', 'rgba(0,0,0,0)');
       $('.nav_bar .nav_menu .nav_link a').css('color', '#fff');
-      $('.nav_bar .nav_menu .nav_link a button').css('color', '#fff');
-      $('.nav_bar .nav_menu .nav_link a button').css('border-color', '#fff');
+      $('.nav_bar .nav_menu .nav_link button').css('color', '#fff');
+      $('.nav_bar .nav_menu .nav_link button').css('border-color', '#fff');
       $('.hamburger .line').css('stroke', '#fff');
     }
   });
@@ -191,3 +191,17 @@ var swiper = new Swiper('.swiper-container',{
 
 }
 })
+
+
+// ==============================About Page =================
+$(document).ready(function(){
+    lottie.loadAnimation({
+    container: document.getElementById('philosophy_lottie_animation'), // Container for the animation
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path:"assets/Animation - 1707836011063.json"
+    // path: 'assets/Animation - 1707732874880.json' // Path to your JSON animation file
+    // path: 'assets/Animation - 1707732697387.json'
+  });
+});
