@@ -1,0 +1,196 @@
+.work_section{
+    padding: 40px;
+    @media (max-width:576px) {
+        padding: 20px;
+    }
+    .wrap_work_section{
+        max-width: 1250px;
+        width: 100%;
+        margin: 0 auto;
+        .inner_container{
+            .heading{
+                font-size: 40px;
+                line-height: 40px;
+                font-weight: 700;
+                color: $light_blue;
+                margin: 0 0 20px;
+                font-family: $font;
+                text-transform: capitalize;
+                @media (max-width:576px) {
+                    font-size: 30px;
+                }
+                @media (max-width:350px) {
+                    font-size: 25px;
+                }
+            
+                span{
+                    color: $purple;
+                }
+            }
+
+            .past_work{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 40px;
+                @media (max-width:767px) {
+                   justify-content: center;
+                }
+                @media (max-width:576px) {
+                    padding: 20px;
+                }
+                .work{
+                    flex: 0 0 auto;
+                    max-width: calc(33.33% - 40px);
+                    width: 100%;
+                    background-color: $light_blue;
+                    padding: 20px 10px;
+                    border-radius: 20px;
+                    display: flex;
+                    // min-width: 358px;
+                    gap: 20px;
+
+                    @media (max-width:991px) {
+                        max-width: calc(50% - 40px);
+                    }
+
+                    @media (max-width:767px) {
+                        max-width: 540px;
+                    }
+                    @media (max-width:420px) {
+                        flex-direction: column;
+                    }
+
+                    .left_column{
+                        // flex: 0 0 10%;
+                        width: 20%;
+                        @media (max-width:991px) {
+                            width: 12%;
+                        }
+                        @media (max-width:767px) {
+                            width: 8%;
+                        }
+                        @media (max-width:576px) {
+                            width:calc(20% - 20px);
+                        }
+                        @media (max-width:420px) {
+                            width: 100%;
+                        }
+                        .image{
+                            width: 100%;
+                            img{
+                                // width: 100%;
+                                transform: translateX(-45%);
+                                // @media (max-width:576px) {
+                                //     transform: translateX(0);
+                                // }
+                                @media (max-width:420px) {
+                                    transform: translateX(0);
+                                }
+                            }
+                        }
+                       
+                    }
+                    .right_column{
+                        // .intro{
+                        //     display: flex;
+                        //     gap: 20px;
+                        // }
+                        // padding-right: 10px;
+                        // flex: 0 0 80%;
+                        width:calc(80% - 20px);
+                        @media (max-width:991px) {
+                            width: 12%;
+                            width:calc(88% - 20px);
+                        }
+                        @media (max-width:767px) {
+                            width:calc(92% - 20px);
+                        }
+                        @media (max-width:576px) {
+                            width:calc(80% - 20px);
+                        }
+                        @media (max-width:420px) {
+                            width: 100%;
+                        }
+                        .name{
+                            h3{
+                                font-weight: 400;
+                                font-size: 20px;
+                                color: $purple;
+                                letter-spacing: 0.7px;
+                                margin-bottom: 10px;
+                                text-transform: capitalize;
+                            }
+                           
+                        }
+                        .rating{
+                            margin-bottom: 10px;
+                            ul{
+                                list-style: none;
+                                display: flex;
+                                align-items: center;
+                                padding: 0;
+                                .score{
+                                    margin-left: 10px;
+                                    font-family: $font;
+                                    font-size: $base-font-size;
+                                    color: $dark_blue
+                                }
+    
+                                li{
+                                    i{
+                                        color: $green;
+    
+    
+                                    }
+    
+                                }
+                            }
+                        }
+
+                        .detail{
+                            p{
+                                font-weight: 400;
+                                font-size: 14px;
+                                color: $dark_blue;
+                                line-height: 26px;
+                                letter-spacing: 0.88px;
+                                margin-bottom: 15px;
+                            }
+                           
+                        }
+
+                        .detail_btn{
+                            a{
+                                button{
+                                    border: 1px solid $white;
+                                    width: 140px;
+                                    height: 36px;
+                                    line-height: 36px;
+                                    text-align: center;
+                                    -webkit-border-radius: 100px;
+                                    -moz-border-radius: 100px;
+                                    border-radius: 100px;
+                                    transition: all 0.5s ease-in-out;
+                                    color: #fff;
+                                    text-transform: uppercase;
+                                    color: $dark_blue;
+                                    border-color: $green;
+                                    background: $green;
+                                    &:hover{
+                                      background-color: $purple;
+                                      color:$green;
+                                      border-color: $purple;
+                                      
+                                    }
+                                }
+                            }
+   
+                        }
+                    }
+                    
+                   
+                }
+            }
+        }
+    }
+}

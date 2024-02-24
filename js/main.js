@@ -1,32 +1,43 @@
 
 
 $(document).ready(function(){
-  $(".hamburger").click(function(){
+  $(".hamburger svg").click(function(){
     $(".mob_nav .nav").slideToggle();
-    $(this).toggleClass("active")
+    $(".drop_down").hide();
+    // $(this).toggleClass("active")
 
     
 
 
   });
+  $(".mob_nav #contact_btn ").click(function(){
+    $(".mob_nav .nav").slideToggle();
+    $(".hamburger .plate").click();
+  
 });
-
+});
 $(document).ready(function() {
   $(window).scroll(function() {
     // Check if the scroll position is greater than or equal to 80 pixels
     if ($(this).scrollTop() >= 80) {
       // Change the background color of the header
-      $('header').css('background-color', '#fff');
-      $('.nav_bar .nav_menu .nav_link a').css('color', '#000');
-      $('.nav_bar .nav_menu .nav_link button').css('border-color', '#000');
-      $('.nav_bar .nav_menu .nav_link button').css('color', '#000');
-      $('.hamburger .line').css('stroke', '#000');
+      $("header").css({
+        "background-color": "#863dff",
+        "background-image": "linear-gradient(135deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%)","box-shadow": "0 4px 6px rgba(0, 0, 0, 0.1);"})
+      // $('.nav_bar .nav_menu .nav_link a').css('color', '#cbff2e');
+      // $('.nav_bar .nav_menu .nav_link button').css('border-color', '#000');
+      // $('.nav_bar .nav_menu .nav_link button').css('color', '#000');
+      $('.hamburger .line').css('stroke', "#dde0ff");
 
     } else {
       // Revert back to the default background color
-      $('header').css('background-color', 'rgba(0,0,0,0)');
-      $('.nav_bar .nav_menu .nav_link a').css('color', '#fff');
-      $('.nav_bar .nav_menu .nav_link button').css('color', '#fff');
+      $('header').css({
+        "background-color": "transparent",
+        "background-image": "none",
+        "box-shadow": "none"
+      });
+      // $('.nav_bar .nav_menu .nav_link a').css('color', '#fff');
+      // $('.nav_bar .nav_menu .nav_link button').css('color', '#fff');
       $('.nav_bar .nav_menu .nav_link button').css('border-color', '#fff');
       $('.hamburger .line').css('stroke', '#fff');
     }
@@ -39,7 +50,7 @@ $(document).ready(function() {
       $("#slideshow").cycle({
         fx: "scrollHorz",
         speed: "fast",
-        timeout: 0,
+        timeout: 2000,
         pager: "#nav",
         after: removePlanArrow,
         pagerAnchorBuilder: function(idx, slide) {
@@ -67,7 +78,7 @@ $(document).ready(function() {
       $("#slideshow2").cycle({
         fx: "scrollHorz",
         speed: "fast",
-        timeout: 0,
+        timeout: 2000,
         pager: "#nav2",
         after: arrowFunction,
         pagerAnchorBuilder: function(idx, slide) {
@@ -104,7 +115,7 @@ $(document).ready(function() {
       renderer: 'svg',
       loop: true,
       autoplay: true,
-      path: 'assets/Animation - 1707732452475.json' // Path to your JSON animation file
+      path: 'assets/lottie_animation.json' // Path to your JSON animation file
     });
   });
   
@@ -205,3 +216,44 @@ $(document).ready(function(){
     // path: 'assets/Animation - 1707732697387.json'
   });
 });
+
+
+// ================== app-single =================================
+$(document).ready(function(){
+  $('.screenshots .images_slider .slider_container ').slick({
+    // rtl: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+    infinite: true,
+    autoplay:true,
+    speed: 500,
+    // centerMode: true,
+    cssEase: 'linear'
+  })
+  
+  $(".screenshots, .images_without_slider .screenshot").click(function(){
+    var slickIndex = $(this).data('slick-index');
+    $('.images_slider .slider_container').slick('slickGoTo', slickIndex);
+    $('.images_slider').css('display', 'block');
+    // $('body').css('overflow', 'hidden');
+    console.log(slickIndex);
+  });
+  
+  $(document).on('click', '.images_slider .cross img', function() {
+    $('.images_slider').hide();
+    console.log("yes");
+});
+})
+
+
+$(document).ready(function(){
+  $(".mege_menu").click(function(){
+    $(".drop_down").slideToggle();
+    $(".mege_menu p").toggleClass("active");
+    // $(this).toggleClass("active")
+    // console.log("yes")''
+    
+  });
+})

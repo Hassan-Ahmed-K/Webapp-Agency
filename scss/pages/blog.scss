@@ -1,0 +1,191 @@
+.main_blog{
+    padding: 40px;
+    @media (max-width:576px) {
+        padding: 20px;
+    }
+    .wrap_main_blog{
+        max-width: 1250px;
+        width: 100%;
+        margin: 0 auto;
+        .inner_container{
+            .image{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 100%;
+                    border-radius: 20px;
+                    max-width:740px ;
+                    max-height: 420px;
+                    
+                }
+            }
+            .comment{
+                display: flex;
+                gap: 40px;
+                margin: 15px 0;
+                p{
+                    color: $purple;
+                    font-family: $font;
+                    font-size: 0.8rem;
+                    i{
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .detail{
+                .heading{
+                    margin-bottom: 15px;
+                    h2{
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: $light_blue;
+                        letter-spacing: 1px;
+                        line-height: 26px;
+                        
+                    }
+                }
+                .text{
+                    p{
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: $light_blue;
+                        letter-spacing: 0.88px;
+                        line-height: 26px;
+                        margin-bottom: 15px;
+                    }
+                }
+                .read_more_btn{
+                    a{
+                        button{
+                            border: 1px solid $white;
+                            width: 140px;
+                            height: 36px;
+                            line-height: 36px;
+                            text-align: center;
+                            -webkit-border-radius: 100px;
+                            -moz-border-radius: 100px;
+                            border-radius: 100px;
+                            transition: all 0.5s ease-in-out;
+                            color: #fff;
+                            text-transform: uppercase;
+                            color: $dark_blue;
+                            border-color: $green;
+                            background: $green;
+                            &:hover{
+                              background-color: $purple;
+                              color:$green;
+                              border-color: $purple;
+                              
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.blogs{
+    padding: 40px;
+    @media (max-width:576px) {
+        padding: 20px;
+    }
+    .wrap_blogs{
+        max-width: 1250px;
+        width: 100%;
+        margin: 0 auto;
+        .inner_container{
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            .blog{
+                flex: 0 0 auto;
+                max-width: calc(50% - 30px);
+                width: 100%;
+                margin-bottom: 20px;
+                @media (max-width:991px) {
+                    max-width: 100%;
+                }
+                .image{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        width: 100%;
+                        border-radius: 20px;
+                        max-width:740px ;
+                        max-height: 420px;
+                        
+                    }
+                }
+                .comment{
+                    display: flex;
+                    gap: 40px;
+                    margin: 15px 0;
+                    p{
+                        color: $purple;
+                        font-family: $font;
+                        font-size: 0.8rem;
+                        i{
+                            margin-right: 10px;
+                        }
+                    }
+                }
+                .detail{
+                    .heading{
+                        margin-bottom: 15px;
+                        h2{
+                            font-weight: 400;
+                            font-size: 16px;
+                            color: $light_blue;
+                            letter-spacing: 1px;
+                            line-height: 26px;
+                            
+                        }
+                    }
+                    .text{
+                        p{
+                            font-weight: 400;
+                            font-size: 14px;
+                            color: $light_blue;
+                            letter-spacing: 0.88px;
+                            line-height: 26px;
+                            margin-bottom: 15px;
+                        }
+                    }
+                    .read_more_btn{
+                        a{
+                            button{
+                                border: 1px solid $white;
+                                width: 140px;
+                                height: 36px;
+                                line-height: 36px;
+                                text-align: center;
+                                -webkit-border-radius: 100px;
+                                -moz-border-radius: 100px;
+                                border-radius: 100px;
+                                transition: all 0.5s ease-in-out;
+                                color: #fff;
+                                text-transform: uppercase;
+                                color: $dark_blue;
+                                border-color: $green;
+                                background: $green;
+                                &:hover{
+                                  background-color: $purple;
+                                  color:$green;
+                                  border-color: $purple;
+                                  
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
