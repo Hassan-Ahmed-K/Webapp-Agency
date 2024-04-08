@@ -11,10 +11,30 @@
     <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="css/style.css">
+   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+<link href="https://md-aqil.github.io/images/swiper.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+<meta name="google-site-verification" content="hQKOUQZ9z1gGHTZ_uyYvoDp5ia0-u4-RvPch5UZLBG8" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.0.3/jquery.cycle.all.min.js"></script>
     <script src="https://kit.fontawesome.com/20b56efb1e.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.14/lottie.min.js"></script>
+    <script src="assets/js/jquery.js"></script>
+<script src="assets/js/custom.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script src="https://md-aqil.github.io/images/swiper.min.js"></script>
+<script src="https://rawgit.com/JulianLaval/canvas-particle-network/master/particle-network.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script type="text/javascript" src="https://js.stripe.com/v3/"></script>
 
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css" integrity="sha512-gb1oLK4TqRvFsYWrPLwP2hBiPt1sk2hm6r4I/VObk+J8jaVqmrZa7mxWKvFQyxUBZLLMj/3tkWjI5iQN3LjJyw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 
@@ -22,117 +42,127 @@
 </head>
 
 <body>
-    <header>
-        <div class="nav_bar">
-            <div class="logo">
-                <a href="/index.html"><img src="assets/logo-dark.svg" alt=""></a>
-            </div>
-            <div class="nav_menu">
-                <div class="nav_link">
-                    <a href="/index.html">home</a>
-                </div>
-                <div class="nav_link">
-                    <a href="/about.html">about</a>
-                </div>
+   <header>
+      <div class="nav_bar">
+          <div class="logo">
+              <a href="/index.html"><img src="assets/logo-dark.svg" alt=""></a>
+          </div>
+          <div class="nav_menu">
+              <div class="nav_link">
+                  <a href="/index.html">home</a>
+              </div>
+              <div class="nav_link">
+                  <a href="/about.html">about</a>
+              </div>
+              <!-- <div class="nav_link">
+                  <a href="/mobile_app.html">MobileApp Dev</a>
+              </div> -->
 
-                <div class="nav_link mege_menu">
-                    <p>service <span><img src="assets/triangle-svgrepo-com.svg" alt=""></span></p>
-                    <ul class="drop_down">
-                        <li><a href="/logo_packages.html">logo packages</a></li>
-                        <li><a href="/website_packages.html">website packages</a></li>
-                        <li><a href="/seo_packages.html">SEO packages</a></li>
-                        <li><a href="/ecommerce_packages.html">ecommerce packages</a></li>
-                        <li><a href="/smm_packages.html">SMM packages</a></li>
-                        <li><a href="/video_packages.html">video packages</a></li>
-                        <li><a href="/hosting_packages.html">hosting packages</a></li>
-                        <li><a href="/ppc_packages.html">PPC packages</a></li>
-                    </ul>
+              <div class="nav_link mege_menu">
+                  <a class="main_link" href="/service.html">service <span><img src="assets/triangle-svgrepo-com.svg" alt=""></span></a>
+                  <ul class="drop_down">
+                      <li><a href="/logo_packages.html">logo packages</a></li>
+                      <li><a href="/website_packages.html">website packages</a></li>
+                      <li><a href="/seo_packages.html">SEO packages</a></li>
+                      <li><a href="/ecommerce_packages.html">ecommerce packages</a></li>
+                      <li><a href="/smm_packages.html">SMM packages</a></li>
+                      <li><a href="/video_packages.html">video packages</a></li>
+                      <li><a href="/hosting_packages.html">hosting packages</a></li>
+                      <li><a href="/ppc_packages.html">PPC packages</a></li>
+                      <li><a href="/mobile_app.html">MobileApp Dev</a></li>
+                  </ul>
+                  
+              </div>
+
+              <div class="nav_link">
+                  <a href="/showcase.html">portfolio</a>
+              </div>
+
+              <div class="nav_link">
+                  <a href="/blog.html">blog</a>
+              </div>
+
+              <div class="nav_link">
+                  <!-- <a href="">  <button style="--clr:#34afa9"><span>contact</span><i></i></button></a> -->
+                  <a href="#footer" id="contact_btn"><button>contact</button></a>
+
+              </div>
+          </div>
+      </div>
+      <div class="mob_nav">
+          <div class="mob_header">
+              <div class="logo">
+                  <a href=""><img src="assets/logo-dark.svg" alt=""></a>
+              </div>
+              <div class="hamburger">
                     
-                </div>
-
-                <div class="nav_link">
-                    <a href="/showcase.html">show Case</a>
-                </div>
-
-                <div class="nav_link">
-                    <a href="/blog.html">blog</a>
-                </div>
- 
-                <div class="nav_link">
-                    <!-- <a href="">  <button style="--clr:#34afa9"><span>contact</span><i></i></button></a> -->
-                    <a href="#footer" id="contact_btn"><button>contact</button></a>
-
-                </div>
-            </div>
-        </div>
-        <div class="mob_nav">
-            <div class="mob_header">
-                <div class="logo">
-                    <a href=""><img src="assets/logo-dark.svg" alt=""></a>
-                </div>
-                <div class="hamburger">
+                    <div class="plate plate4" onclick="this.classList.toggle('active')">
+                      <svg class="burger" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+                        <path class="line line1" d="M 50,35 H 30" />
+                        <path class="line line2" d="M 50,35 H 70" />
+                        <path class="line line3" d="M 50,50 H 30" />
+                        <path class="line line4" d="M 50,50 H 70" />
+                        <path class="line line5" d="M 50,65 H 30" />
+                        <path class="line line6" d="M 50,65 H 70" />
+                      </svg>
+                      <svg class="x" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+                        <path class="line" d="M 34,32 L 66,68" />
+                        <path class="line" d="M 66,32 L 34,68" />
+                      </svg>
+                    </div>
+                    
+              </div>
+              
+      </div>
+          <div class="nav">
+              <div class="nav_menu">
+                  <div class="nav_link ">
+                      <a href="/index.html">home</a>
+                  </div>
+  
+                  <div class="nav_link">
+                      <a href="/about.html">about</a>
+                  </div>
+                  <div class="nav_link">
+                      <a href="/mobile_app.html">MobileApp Dev</a>
+                  </div>
+                  <div class="nav_link mege_menu">
+                      <p>service <span><img src="assets/triangle-svgrepo-com.svg" alt=""></span></p>
+                      <ul class="drop_down">
+                          <li><a href="/service.html"></a></li>
+                          <li><a href="/logo_packages.html">logo packages</a></li>
+                          <li><a href="/website_packages.html">website packages</a></li>
+                          <li><a href="/seo_packages.html">SEO packages</a></li>
+                          <li><a href="/ecommerce_packages.html">ecommerce packages</a></li>
+                          <li><a href="/smm_packages.html">SMM packages</a></li>
+                          <li><a href="/video_packages.html">video packages</a></li>
+                          <li><a href="/hosting_packages.html">hosting packages</a></li>
+                          <li><a href="/ppc_packages.html">PPC packages</a></li>
+                          <li><a href="/mobile_app.html">MobileApp Dev</a></li>
+                          <li class="green"><a href="/service.html">View More</a></li>
+                      </ul>
+                      <!-- <a href="/service.html">Service</a> -->
                       
-                      <div class="plate plate4" onclick="this.classList.toggle('active')">
-                        <svg class="burger" version="1.1" height="100" width="100" viewBox="0 0 100 100">
-                          <path class="line line1" d="M 50,35 H 30" />
-                          <path class="line line2" d="M 50,35 H 70" />
-                          <path class="line line3" d="M 50,50 H 30" />
-                          <path class="line line4" d="M 50,50 H 70" />
-                          <path class="line line5" d="M 50,65 H 30" />
-                          <path class="line line6" d="M 50,65 H 70" />
-                        </svg>
-                        <svg class="x" version="1.1" height="100" width="100" viewBox="0 0 100 100">
-                          <path class="line" d="M 34,32 L 66,68" />
-                          <path class="line" d="M 66,32 L 34,68" />
-                        </svg>
-                      </div>
-                      
-                </div>
-                
-        </div>
-            <div class="nav">
-                <div class="nav_menu">
-                    <div class="nav_link ">
-                        <a href="/index.html">home</a>
-                    </div>
-    
-                    <div class="nav_link">
-                        <a href="/about.html">about</a>
-                    </div>
-                    <div class="nav_link mege_menu">
-                        <p>service <span><img src="assets/triangle-svgrepo-com.svg" alt=""></span></p>
-                        <ul class="drop_down">
-                            <li><a href="/logo_packages.html">logo packages</a></li>
-                            <li><a href="/website_packages.html">website packages</a></li>
-                            <li><a href="/seo_packages.html">SEO packages</a></li>
-                            <li><a href="/ecommerce_packages.html">ecommerce packages</a></li>
-                            <li><a href="/smm_packages.html">SMM packages</a></li>
-                            <li><a href="/video_packages.html">video packages</a></li>
-                            <li><a href="/hosting_packages.html">hosting packages</a></li>
-                            <li><a href="/ppc_packages.html">PPC packages</a></li>
-                        </ul>
-                        
-                    </div>
-    
-                    <div class="nav_link">
-                        <a href="/showcase.html">show Case</a>
-                    </div>
-    
-                    <div class="nav_link">
-                        <a href="/blog.html">blog</a>
-                    </div>
-     
-                    <div class="nav_link">
-                        <!-- <a href="">  <button style="--clr:#34afa9"><span>contact</span><i></i></button></a> -->
-                        <a href="#footer" id="contact_btn"><button>contact</button></a>
-    
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </header>
-
+                  </div>
+  
+                  <div class="nav_link">
+                      <a href="/showcase.html">portfolio</a>
+                  </div>
+  
+                  <div class="nav_link">
+                      <a href="/blog.html">blog</a>
+                  </div>
+   
+                  <div class="nav_link">
+                      <!-- <a href="">  <button style="--clr:#34afa9"><span>contact</span><i></i></button></a> -->
+                      <a href="#footer" id="contact_btn"><button>contact</button></a>
+  
+                  </div>
+              </div>
+          </div>
+          
+      </div>
+  </header>
     <main>
         <section class="banner_2">
             <div class="background_image">
@@ -149,7 +179,7 @@
             </div>
         </section>
 
-        <section class="work_section">
+        <!-- <section class="work_section">
             <div class="wrap_work_section">
                 <div class="inner_container">
                     <h2 class="heading"><span>our</span> work</h2>
@@ -363,7 +393,984 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
+
+        <!-- <section class="platforms_section">
+            <div class="wrap_platforms_section">
+                <div class="inner_container">
+                    <div class="heading">
+                        <h2>PLATFORMS</h2>
+                        <h3>We specialize in various CMS</h3>
+                    </div>
+                    <div class="platforms">
+                        <div class="platform">
+                            <img src="assets/wordpress.png" alt="">
+                        </div>
+                        <div class="platform">
+                            <img src="assets/shopify.png" alt="">
+                        </div>
+                        <div class="platform">
+                            <img src="assets/weebly.png" alt="">
+                        </div>
+                        <div class="platform">
+                            <img src="assets/webflow.png" alt="">
+                        </div>
+                        <div class="platform">
+                            <img src="assets/joomlal.png" alt="">
+                        </div>
+                        <div class="platform">
+                            <img src="assets/presta.png" alt="">
+                        </div>
+                        <div class="platform">
+                            <img src="assets/shift.png" alt="">
+                        </div>
+                        <div class="platform">
+                            <img src="assets/websitex5.png" alt="">
+                        </div>
+                        <div class="platform">
+                            <img src="assets/modx.png" alt="">
+                        </div>
+                        <div class="platform">
+                            <img src="assets/opencart.png" alt="">
+                        </div>
+                        <div class="platform">
+                            <img src="assets/wix.png" alt="">
+                        </div>
+                        <div class="platform">
+                            <img src="assets/squarespace.png" alt="">
+                        </div>
+                        <div class="platform">
+                            <img src="assets/bigcommerce.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+        </section> -->
+
+
+         <!-- <section class="portfolio_section">
+            <div class="wrap_portfolio_section">
+                <div class="inner_container">
+                    <div class="left_column">
+                        <ul class="tab-navigation">
+                            <li class="tab-link" data-tab="tab1"><img src="assets/portfolio/logo-design.svg" alt="">logo design</li>
+                            <li class="tab-link" data-tab="tab2"><img src="assets/portfolio/ecommerce-website.svg" alt="">Informative Website</li>
+                            <li class="tab-link" data-tab="tab3"><img src="assets/portfolio/custom-website.svg" alt="">eCommerce Website</li>
+                            <li class="tab-link" data-tab="tab4"><img src="assets/portfolio/video-animation.svg" alt="">Video Animation</li>
+                            <li class="tab-link" data-tab="tab5"><img src="assets/portfolio/video-animation.svg" alt="">Brand Design</li>
+                        </ul>
+                    </div>
+                    <div class="right_column">
+                        <div class="tab-content" id="tab1">
+                            <div class="work">
+                                <img src="assets/portfolio/logo/1.jpg" alt="">
+                            </div>
+                            <div class="work">
+                                <img src="assets/portfolio/logo/2.jpg" alt="">
+                            </div>
+                            <div class="work">
+                                <img src="assets/portfolio/logo/3.jpg" alt="">
+                            </div>
+                            <div class="work">
+                                <img src="assets/portfolio/logo/4.jpg" alt="">
+                            </div>
+                            
+                        </div>
+                        <div class="tab-content" id="tab2">Content of Tab 2</div>
+                        <div class="tab-content" id="tab3">Content of Tab 3</div>
+                        <div class="tab-content" id="tab4">Content of Tab 4</div>
+                    </div>
+                </div>
+               
+                </div>
+            </div>
+         </section> -->
+
+
+         <section class="bg-white portf thirdSec" id="port">
+            <div class="container-fluid">
+               <div class="text-center">
+                  <div class="m3-h">
+                     <h5><span>Our</span> Work</h5>
+                  </div>
+                  <div class="p3">
+                     <p>Whatever your business need or budget, we’ll help get it done.</p>
+                  </div>      
+               </div>
+               <!--  -->
+               <div class="tabs mt-35 wow bounceInUp">
+                  <ul id="tab-links">
+                     <li class="t1"><a href="#tab-1" class="active" title="Logo Design"></a></li>
+                     <li class="t2" ><a href="#tab-2" title="Informative Website"></a></li>
+                     <li class="t3"><a href="#tab-3" title="eCommerce Website"></a></li>
+                     <li class="t4"><a href="#tab-4" title="Video Animation"></a></li>
+                     <li class="t6"><a href="#tab-5" title="Branding Design"></a></li>
+                     <!-- <li class="t6"><a href="#tab-6" title=""></a>SEO</li>
+                     <li class="t7"><a href="#tab-7" title="Content Writing"></a></li> -->
+                  </ul>
+                  
+                  <section id="tab-1" class="active">
+                     <main class="main">
+                        <div class="box-logodesign">
+                        <div class="col-lg-12">
+                              <div class="portfolio-box">
+                                 <ul class="#ec1c23">
+                                    <li>
+                                          <div class="portfolio-item">
+                                             <a href="javascript:;">
+                                                <img
+                                                      src="assets/images/portfolio/logo/full/1.jpg" />
+                                             </a>
+                                             <div class="hover-effect">
+                                                <a data-fancybox="videoanimation"
+                                                      href="assets/images/portfolio/logo/1.jpg">
+                                                      <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                </a>
+                                             </div>
+                                          </div>
+                                    </li>
+                                    <li>
+                                          <div class="portfolio-item">
+                                             <a href="javascript:;">
+                                                <img
+                                                      src="assets/images/portfolio/logo/full/2.jpg" />
+                                             </a>
+                                             <div class="hover-effect">
+                                                <a data-fancybox="videoanimation"
+                                                      href="assets/images/portfolio/logo/2.jpg">
+                                                      <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                </a>
+                                             </div>
+                                          </div>
+                                    </li>
+                                    <li>
+                                          <div class="portfolio-item">
+                                             <a href="javascript:;">
+                                                <img
+                                                      src="assets/images/portfolio/logo/full/3.jpg" />
+                                             </a>
+                                             <div class="hover-effect">
+                                                <a data-fancybox="videoanimation"
+                                                      href="assets/images/portfolio/logo/3.jpg">
+                                                      <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                </a>
+                                             </div>
+                                          </div>
+                                    </li>
+                                    <li>
+                                          <div class="portfolio-item">
+                                             <a href="javascript:;">
+                                                <img
+                                                      src="assets/images/portfolio/logo/full/4.jpg" />
+                                             </a>
+                                             <div class="hover-effect">
+                                                <a data-fancybox="videoanimation"
+                                                      href="assets/images/portfolio/logo/4.jpg">
+                                                      <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                </a>
+                                             </div>
+                                          </div>
+                                    </li>
+                                    <li>
+                                          <div class="portfolio-item">
+                                             <a href="javascript:;">
+                                                <img
+                                                      src="assets/images/portfolio/logo/full/5.jpg" />
+                                             </a>
+                                             <div class="hover-effect">
+                                                <a data-fancybox="videoanimation"
+                                                      href="assets/images/portfolio/logo/5.jpg">
+                                                      <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                </a>
+                                             </div>
+                                          </div>
+                                    </li>
+                                    <li>
+                                          <div class="portfolio-item">
+                                             <a href="javascript:;">
+                                                <img
+                                                      src="assets/images/portfolio/logo/full/6.jpg" />
+                                             </a>
+                                             <div class="hover-effect">
+                                                <a data-fancybox="videoanimation"
+                                                      href="assets/images/portfolio/logo/6.jpg">
+                                                      <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                </a>
+                                             </div>
+                                          </div>
+                                    </li>
+                                    <li>
+                                          <div class="portfolio-item">
+                                             <a href="javascript:;">
+                                                <img
+                                                      src="assets/images/portfolio/logo/full/11.jpg" />
+                                             </a>
+                                             <div class="hover-effect">
+                                                <a data-fancybox="videoanimation"
+                                                      href="assets/images/portfolio/logo/11.jpg">
+                                                      <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                </a>
+                                             </div>
+                                          </div>
+                                    </li>
+                                    <li>
+                                          <div class="portfolio-item">
+                                             <a href="javascript:;">
+                                                <img
+                                                      src="assets/images/portfolio/logo/full/8.jpg" />
+                                             </a>
+                                             <div class="hover-effect">
+                                                <a data-fancybox="videoanimation"
+                                                      href="assets/images/portfolio/logo/8.jpg">
+                                                      <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                </a>
+                                             </div>
+                                          </div>
+                                    </li>
+                                    <li>
+                                          <div class="portfolio-item">
+                                             <a href="javascript:;">
+                                                <img
+                                                      src="assets/images/portfolio/logo/full/9.jpg" />
+                                             </a>
+                                             <div class="hover-effect">
+                                                <a data-fancybox="videoanimation"
+                                                      href="assets/images/portfolio/logo/9.jpg">
+                                                      <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                </a>
+                                             </div>
+                                          </div>
+                                    </li>
+                                    <li>
+                                          <div class="portfolio-item">
+                                             <a href="javascript:;">
+                                                <img
+                                                      src="assets/images/portfolio/logo/full/12.jpg" />
+                                             </a>
+                                             <div class="hover-effect">
+                                                <a data-fancybox="videoanimation"
+                                                      href="assets/images/portfolio/logo/12.jpg">
+                                                      <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                </a>
+                                             </div>
+                                          </div>
+                                    </li>
+                                    <li>
+                                          <div class="portfolio-item">
+                                             <a href="javascript:;">
+                                                <img
+                                                      src="assets/images/portfolio/logo/full/7.jpg" />
+                                             </a>
+                                             <div class="hover-effect">
+                                                <a data-fancybox="videoanimation"
+                                                      href="assets/images/portfolio/logo/7.jpg">
+                                                      <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                </a>
+                                             </div>
+                                          </div>
+                                    </li>
+                                    <li>
+                                          <div class="portfolio-item">
+                                             <a href="javascript:;">
+                                                <img
+                                                      src="assets/images/portfolio/logo/full/10.jpg" />
+                                             </a>
+                                             <div class="hover-effect">
+                                                <a data-fancybox="videoanimation"
+                                                      href="assets/images/portfolio/logo/10.jpg">
+                                                      <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                </a>
+                                             </div>
+                                          </div>
+                                    </li>
+                                 </ul>
+                              </div>
+                        </div>
+                        </div>  
+                     </main>                
+                  </section>
+                  
+                  <section id="tab-2">
+                     <main class="main">
+                        <div class="box-webdesign">
+                           <div class="col-lg-12">
+                                 <div class="portfolio-box">
+                                    <ul class="responsive-slider2">
+                                       <li>
+                                             <div class="portfolio-item">
+                                                <a href="javascript:;">
+                                                   <img src="assets/images/portfolio/website/1.jpg" />
+                                                </a>
+                                                <div class="hover-effect">
+                                                   <a data-fancybox="portfoliowebsite"
+                                                         href="assets/images/portfolio/website/full/1.jpg">
+                                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                       </li>
+                                       <li>
+                                             <div class="portfolio-item">
+                                                <a href="javascript:;">
+                                                   <img src="assets/images/portfolio/website/2.jpg" />
+                                                </a>
+                                                <div class="hover-effect">
+                                                   <a data-fancybox="portfoliowebsite"
+                                                         href="assets/images/portfolio/website/full/2.jpg">
+                                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                       </li>
+                                       <li>
+                                             <div class="portfolio-item">
+                                                <a href="javascript:;">
+                                                   <img src="assets/images/portfolio/website/3.jpg" />
+                                                </a>
+                                                <div class="hover-effect">
+                                                   <a data-fancybox="portfoliowebsite"
+                                                         href="assets/images/portfolio/website/full/3.jpg">
+                                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                       </li>
+                                       <li>
+                                             <div class="portfolio-item">
+                                                <a href="javascript:;">
+                                                   <img src="assets/images/portfolio/website/4.jpg" />
+                                                </a>
+                                                <div class="hover-effect">
+                                                   <a data-fancybox="portfoliowebsite"
+                                                         href="assets/images/portfolio/website/full/4.jpg">
+                                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                       </li>
+                                       <li>
+                                             <div class="portfolio-item">
+                                                <a href="javascript:;">
+                                                   <img src="assets/images/portfolio/website/5.jpg" />
+                                                </a>
+                                                <div class="hover-effect">
+                                                   <a data-fancybox="portfoliowebsite"
+                                                         href="assets/images/portfolio/website/full/5.jpg">
+                                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                       </li>
+                                       <li>
+                                             <div class="portfolio-item">
+                                                <a href="javascript:;">
+                                                   <img src="assets/images/portfolio/website/6.jpg" />
+                                                </a>
+                                                <div class="hover-effect">
+                                                   <a data-fancybox="portfoliowebsite"
+                                                         href="assets/images/portfolio/website/full/6.jpg">
+                                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                       </li>
+                                       <li>
+                                             <div class="portfolio-item">
+                                                <a href="javascript:;">
+                                                   <img src="assets/images/portfolio/website/7.jpg" />
+                                                </a>
+                                                <div class="hover-effect">
+                                                   <a data-fancybox="portfoliowebsite"
+                                                         href="assets/images/portfolio/website/full/7.jpg">
+                                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                       </li>
+                                       <li>
+                                             <div class="portfolio-item">
+                                                <a href="javascript:;">
+                                                   <img src="assets/images/portfolio/website/8.jpg" />
+                                                </a>
+                                                <div class="hover-effect">
+                                                   <a data-fancybox="portfoliowebsite"
+                                                         href="assets/images/portfolio/website/full/8.jpg">
+                                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                       </li>
+                                       <li>
+                                             <div class="portfolio-item">
+                                                <a href="javascript:;">
+                                                   <img src="assets/images/portfolio/website/9.jpg" />
+                                                </a>
+                                                <div class="hover-effect">
+                                                   <a data-fancybox="portfoliowebsite"
+                                                         href="assets/images/portfolio/website/full/9.jpg">
+                                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                       </li>
+                                       <li>
+                                             <div class="portfolio-item">
+                                                <a href="javascript:;">
+                                                   <img src="assets/images/portfolio/website/10.jpg" />
+                                                </a>
+                                                <div class="hover-effect">
+                                                   <a data-fancybox="portfoliowebsite"
+                                                         href="assets/images/portfolio/website/full/10.jpg">
+                                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                       </li>
+                                       <li>
+                                             <div class="portfolio-item">
+                                                <a href="javascript:;">
+                                                   <img src="assets/images/portfolio/website/11.jpg" />
+                                                </a>
+                                                <div class="hover-effect">
+                                                   <a data-fancybox="portfoliowebsite"
+                                                         href="assets/images/portfolio/website/full/11.jpg">
+                                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                       </li>
+                                       <li>
+                                             <div class="portfolio-item">
+                                                <a href="javascript:;">
+                                                   <img src="assets/images/portfolio/website/12.jpg" />
+                                                </a>
+                                                <div class="hover-effect">
+                                                   <a data-fancybox="portfoliowebsite"
+                                                         href="assets/images/portfolio/website/full/12.jpg">
+                                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                       </li>
+                                    </ul>
+                                 </div>
+                           </div>
+                        </div> 
+                     </main>
+                  </section>
+                  
+                  <section id="tab-3">
+                     <main>
+                        <div class="box-ecom">
+                           <div class="col-lg-12">
+                                 <div class="portfolio-box">
+                                    <ul class="responsive-slider2">
+                                       <li>
+                                             <div class="portfolio-item">
+                                                <a href="javascript:;">
+                                                   <img src="assets/images/portfolio/ecommerce/1.jpg" />
+                                                </a>
+                                                <div class="hover-effect">
+                                                   <a data-fancybox="portfolioecom"
+                                                         href="assets/images/portfolio/ecommerce/full/1.jpg">
+                                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                       </li>
+                                       <li>
+                                             <div class="portfolio-item">
+                                                <a href="javascript:;">
+                                                   <img src="assets/images/portfolio/ecommerce/2.jpg" />
+                                                </a>
+                                                <div class="hover-effect">
+                                                   <a data-fancybox="portfolioecom"
+                                                         href="assets/images/portfolio/ecommerce/full/2.jpg">
+                                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                       </li>
+                                       <li>
+                                             <div class="portfolio-item">
+                                                <a href="javascript:;">
+                                                   <img src="assets/images/portfolio/ecommerce/3.jpg" />
+                                                </a>
+                                                <div class="hover-effect">
+                                                   <a data-fancybox="portfolioecom"
+                                                         href="assets/images/portfolio/ecommerce/full/3.jpg">
+                                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                       </li>
+                                       <li>
+                                             <div class="portfolio-item">
+                                                <a href="javascript:;">
+                                                   <img src="assets/images/portfolio/ecommerce/4.jpg" />
+                                                </a>
+                                                <div class="hover-effect">
+                                                   <a data-fancybox="portfolioecom"
+                                                         href="assets/images/portfolio/ecommerce/full/4.jpg">
+                                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                       </li>
+                                       <li>
+                                             <div class="portfolio-item">
+                                                <a href="javascript:;">
+                                                   <img src="assets/images/portfolio/ecommerce/5.jpg" />
+                                                </a>
+                                                <div class="hover-effect">
+                                                   <a data-fancybox="portfolioecom"
+                                                         href="assets/images/portfolio/ecommerce/full/5.jpg">
+                                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                       </li>
+                                       <li>
+                                             <div class="portfolio-item">
+                                                <a href="javascript:;">
+                                                   <img src="assets/images/portfolio/ecommerce/6.jpg" />
+                                                </a>
+                                                <div class="hover-effect">
+                                                   <a data-fancybox="portfolioecom"
+                                                         href="assets/images/portfolio/ecommerce/full/6.jpg">
+                                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                       </li>
+                                       <li>
+                                             <div class="portfolio-item">
+                                                <a href="javascript:;">
+                                                   <img src="assets/images/portfolio/ecommerce/7.jpg" />
+                                                </a>
+                                                <div class="hover-effect">
+                                                   <a data-fancybox="portfolioecom"
+                                                         href="assets/images/portfolio/ecommerce/full/7.jpg">
+                                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                       </li>
+                                       <li>
+                                             <div class="portfolio-item">
+                                                <a href="javascript:;">
+                                                   <img src="assets/images/portfolio/ecommerce/8.jpg" />
+                                                </a>
+                                                <div class="hover-effect">
+                                                   <a data-fancybox="portfolioecom"
+                                                         href="assets/images/portfolio/ecommerce/full/8.jpg">
+                                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                       </li>
+                                       <li>
+                                             <div class="portfolio-item">
+                                                <a href="javascript:;">
+                                                   <img src="assets/images/portfolio/ecommerce/9.jpg" />
+                                                </a>
+                                                <div class="hover-effect">
+                                                   <a data-fancybox="portfolioecom"
+                                                         href="assets/images/portfolio/ecommerce/full/9.jpg">
+                                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                       </li>
+                                       <li>
+                                             <div class="portfolio-item">
+                                                <a href="javascript:;">
+                                                   <img src="assets/images/portfolio/ecommerce/10.jpg" />
+                                                </a>
+                                                <div class="hover-effect">
+                                                   <a data-fancybox="portfolioecom"
+                                                         href="assets/images/portfolio/ecommerce/full/10.jpg">
+                                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                       </li>
+                                       <li>
+                                             <div class="portfolio-item">
+                                                <a href="javascript:;">
+                                                   <img src="assets/images/portfolio/ecommerce/11.jpg" />
+                                                </a>
+                                                <div class="hover-effect">
+                                                   <a data-fancybox="portfolioecom"
+                                                         href="assets/images/portfolio/ecommerce/full/11.jpg">
+                                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                       </li>
+                                       <li>
+                                             <div class="portfolio-item">
+                                                <a href="javascript:;">
+                                                   <img src="assets/images/portfolio/ecommerce/12.jpg" />
+                                                </a>
+                                                <div class="hover-effect">
+                                                   <a data-fancybox="portfolioecom"
+                                                         href="assets/images/portfolio/ecommerce/full/12.jpg">
+                                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                       </li>
+                                    </ul>
+                                 </div>
+                           </div>
+                        </div> 
+                     </main>                 
+                  </section>
+                  
+                  <section id="tab-4">
+                     <div class="box-vid">
+                        <div class="col-lg-12">
+                              <div class="portfolio-box">
+                                 <ul class="responsive-slider2">
+                                    <li>
+                                          <div class="portfolio-item">
+                                             <a href="javascript:;">
+                                                <img src="assets/images/portfolio/video-animation/1.jpg" />
+                                             </a>
+                                             <div class="hover-effect">
+                                                <a data-fancybox="portfolioanim"
+                                                      href="assets/images/portfolio/video-animation/full/1.gif">
+                                                      <i class="fa fa-play" style="color:#fff;"  aria-hidden="true"></i>
+                                                </a>
+                                             </div>
+                                          </div>
+                                    </li>
+                                    <li>
+                                          <div class="portfolio-item">
+                                             <a href="javascript:;">
+                                                <img src="assets/images/portfolio/video-animation/2.jpg" />
+                                             </a>
+                                             <div class="hover-effect">
+                                                <a data-fancybox="portfolioanim"
+                                                      href="assets/images/portfolio/video-animation/full/2.gif">
+                                                      <i class="fa fa-play" style="color:#fff;"  aria-hidden="true"></i>
+                                                </a>
+                                             </div>
+                                          </div>
+                                    </li>
+                                    <li>
+                                          <div class="portfolio-item">
+                                             <a href="javascript:;">
+                                                <img src="assets/images/portfolio/video-animation/3.jpg" />
+                                             </a>
+                                             <div class="hover-effect">
+                                                <a data-fancybox="portfolioanim"
+                                                      href="assets/images/portfolio/video-animation/full/3.gif">
+                                                      <i class="fa fa-play" style="color:#fff;"  aria-hidden="true"></i>
+                                                </a>
+                                             </div>
+                                          </div>
+                                    </li>
+                                    <li>
+                                          <div class="portfolio-item">
+                                             <a href="javascript:;">
+                                                <img src="assets/images/portfolio/video-animation/4.jpg" />
+                                             </a>
+                                             <div class="hover-effect">
+                                                <a data-fancybox="portfolioanim"
+                                                      href="assets/images/portfolio/video-animation/full/4.gif">
+                                                      <i class="fa fa-play" style="color:#fff;"  aria-hidden="true"></i>
+                                                </a>
+                                             </div>
+                                          </div>
+                                    </li>
+                                    <li>
+                                          <div class="portfolio-item">
+                                             <a href="javascript:;">
+                                                <img src="assets/images/portfolio/video-animation/5.jpg" />
+                                             </a>
+                                             <div class="hover-effect">
+                                                <a data-fancybox="portfolioanim"
+                                                      href="assets/images/portfolio/video-animation/full/5.gif">
+                                                      <i class="fa fa-play" style="color:#fff;"  aria-hidden="true"></i>
+                                                </a>
+                                             </div>
+                                          </div>
+                                    </li>
+                                    <li>
+                                          <div class="portfolio-item">
+                                             <a href="javascript:;">
+                                                <img src="assets/images/portfolio/video-animation/6.jpg" />
+                                             </a>
+                                             <div class="hover-effect">
+                                                <a data-fancybox="portfolioanim"
+                                                      href="assets/images/portfolio/video-animation/full/6.gif">
+                                                      <i class="fa fa-play" style="color:#fff;"  aria-hidden="true"></i>
+                                                </a>
+                                             </div>
+                                          </div>
+                                    </li>
+                                    <li>
+                                          <div class="portfolio-item">
+                                             <a href="javascript:;">
+                                                <img src="assets/images/portfolio/video-animation/7.jpg" />
+                                             </a>
+                                             <div class="hover-effect">
+                                                <a data-fancybox="portfolioanim"
+                                                      href="assets/images/portfolio/video-animation/full/7.gif">
+                                                      <i class="fa fa-play" style="color:#fff;"  aria-hidden="true"></i>
+                                                </a>
+                                             </div>
+                                          </div>
+                                    </li>
+                                    <li>
+                                          <div class="portfolio-item">
+                                             <a href="javascript:;">
+                                                <img src="assets/images/portfolio/video-animation/8.jpg" />
+                                             </a>
+                                             <div class="hover-effect">
+                                                <a data-fancybox="portfolioanim"
+                                                      href="assets/images/portfolio/video-animation/full/8.gif">
+                                                      <i class="fa fa-play" style="color:#fff;"  aria-hidden="true"></i>
+                                                </a>
+                                             </div>
+                                          </div>
+                                    </li>
+                                    <li>
+                                          <div class="portfolio-item">
+                                             <a href="javascript:;">
+                                                <img src="assets/images/portfolio/video-animation/9.jpg" />
+                                             </a>
+                                             <div class="hover-effect">
+                                                <a data-fancybox="portfolioanim"
+                                                      href="assets/images/portfolio/video-animation/full/9.gif">
+                                                      <i class="fa fa-play"  style="color:#fff;" aria-hidden="true"></i>
+                                                </a>
+                                             </div>
+                                          </div>
+                                    </li>
+                                    <li>
+                                          <div class="portfolio-item">
+                                             <a href="javascript:;">
+                                                <img src="assets/images/portfolio/video-animation/10.jpg" />
+                                             </a>
+                                             <div class="hover-effect">
+                                                <a data-fancybox="portfolioanim"
+                                                      href="assets/images/portfolio/video-animation/full/10.gif">
+                                                      <i class="fa fa-play"  style="color:#fff;" aria-hidden="true"></i>
+                                                </a>
+                                             </div>
+                                          </div>
+                                    </li>
+                                    <li>
+                                          <div class="portfolio-item">
+                                             <a href="javascript:;">
+                                                <img src="assets/images/portfolio/video-animation/11.jpg" />
+                                             </a>
+                                             <div class="hover-effect">
+                                                <a data-fancybox="portfolioanim"
+                                                      href="assets/images/portfolio/video-animation/full/11.gif">
+                                                      <i class="fa fa-play" style="color:#fff;"  aria-hidden="true"></i>
+                                                </a>
+                                             </div>
+                                          </div>
+                                    </li>
+                                    <li>
+                                          <div class="portfolio-item">
+                                             <a href="javascript:;">
+                                                <img src="assets/images/portfolio/video-animation/12.jpg" />
+                                             </a>
+                                             <div class="hover-effect">
+                                                <a data-fancybox="portfolioanim"
+                                                      href="assets/images/portfolio/video-animation/full/12.gif">
+                                                      <i class="fa fa-play" style="color:#fff;" aria-hidden="true"></i>
+                                                </a>
+                                             </div>
+                                          </div>
+                                    </li>
+                                 </ul>
+                              </div>
+                        </div>
+                     </div>                  
+                  </section>
+                  
+                  <section id="tab-5">
+                     <main class="main">
+                        <div class="box-branding">
+                           <div class="col-lg-12">
+                                 <div class="portfolio-box">
+                                    <ul class="responsive-slider2">
+                                       <li>
+                                             <div class="portfolio-item">
+                                                <a href="javascript:;">
+                                                   <img src="assets/images/portfolio/branding/1.jpg" />
+                                                </a>
+                                                <div class="hover-effect">
+                                                   <a data-fancybox="portfoliowebsite"
+                                                         href="assets/images/portfolio/branding/full/1.jpg">
+                                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                       </li>
+                                       <li>
+                                             <div class="portfolio-item">
+                                                <a href="javascript:;">
+                                                   <img src="assets/images/portfolio/branding/2.jpg" />
+                                                </a>
+                                                <div class="hover-effect">
+                                                   <a data-fancybox="portfoliowebsite"
+                                                         href="assets/images/portfolio/branding/full/2.jpg">
+                                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                       </li>
+                                       <li>
+                                             <div class="portfolio-item">
+                                                <a href="javascript:;">
+                                                   <img src="assets/images/portfolio/branding/3.jpg" />
+                                                </a>
+                                                <div class="hover-effect">
+                                                   <a data-fancybox="portfoliowebsite"
+                                                         href="assets/images/portfolio/branding/full/3.jpg">
+                                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                       </li>
+                                       <li>
+                                             <div class="portfolio-item">
+                                                <a href="javascript:;">
+                                                   <img src="assets/images/portfolio/branding/4.jpg" />
+                                                </a>
+                                                <div class="hover-effect">
+                                                   <a data-fancybox="portfoliowebsite"
+                                                         href="assets/images/portfolio/branding/full/4.jpg">
+                                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                       </li>
+                                       <li>
+                                             <div class="portfolio-item">
+                                                <a href="javascript:;">
+                                                   <img src="assets/images/portfolio/branding/5.jpg" />
+                                                </a>
+                                                <div class="hover-effect">
+                                                   <a data-fancybox="portfoliowebsite"
+                                                         href="assets/images/portfolio/branding/full/5.jpg">
+                                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                       </li>
+                                       <li>
+                                             <div class="portfolio-item">
+                                                <a href="javascript:;">
+                                                   <img src="assets/images/portfolio/branding/6.jpg" />
+                                                </a>
+                                                <div class="hover-effect">
+                                                   <a data-fancybox="portfoliowebsite"
+                                                         href="assets/images/portfolio/branding/full/6.jpg">
+                                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                       </li>
+                                       <li>
+                                             <div class="portfolio-item">
+                                                <a href="javascript:;">
+                                                   <img src="assets/images/portfolio/branding/7.jpg" />
+                                                </a>
+                                                <div class="hover-effect">
+                                                   <a data-fancybox="portfoliowebsite"
+                                                         href="assets/images/portfolio/branding/full/7.jpg">
+                                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                       </li>
+                                       <li>
+                                             <div class="portfolio-item">
+                                                <a href="javascript:;">
+                                                   <img src="assets/images/portfolio/branding/8.jpg" />
+                                                </a>
+                                                <div class="hover-effect">
+                                                   <a data-fancybox="portfoliowebsite"
+                                                         href="assets/images/portfolio/branding/full/8.jpg">
+                                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                       </li>
+                                       <li>
+                                             <div class="portfolio-item">
+                                                <a href="javascript:;">
+                                                   <img src="assets/images/portfolio/branding/9.png" />
+                                                </a>
+                                                <div class="hover-effect">
+                                                   <a data-fancybox="portfoliowebsite"
+                                                         href="assets/images/portfolio/branding/full/9.jpg">
+                                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                       </li>
+                                       <li>
+                                             <div class="portfolio-item">
+                                                <a href="javascript:;">
+                                                   <img src="assets/images/portfolio/branding/10.png" />
+                                                </a>
+                                                <div class="hover-effect">
+                                                   <a data-fancybox="portfoliowebsite"
+                                                         href="assets/images/portfolio/branding/full/10.jpg">
+                                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                       </li>
+                                       <li>
+                                             <div class="portfolio-item">
+                                                <a href="javascript:;">
+                                                   <img src="assets/images/portfolio/branding/11.png" />
+                                                </a>
+                                                <div class="hover-effect">
+                                                   <a data-fancybox="portfoliowebsite"
+                                                         href="assets/images/portfolio/branding/full/11.jpg">
+                                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                       </li>
+                                       <li>
+                                             <div class="portfolio-item">
+                                                <a href="javascript:;">
+                                                   <img src="assets/images/portfolio/branding/12.png" />
+                                                </a>
+                                                <div class="hover-effect">
+                                                   <a data-fancybox="portfoliowebsite"
+                                                         href="assets/images/portfolio/branding/full/12.jpg">
+                                                         <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                       </li>
+                                    </ul>
+                                 </div>
+                           </div>
+                        </div> 
+                     </main>          
+                  </section>
+                  
+               </div>
+               <!--  -->
+            </div>
+         </section>
+        
 
     </main>
 
@@ -449,6 +1456,83 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+        // Fancybox Configuration
+        console.log('fancy box');
+        $('[data-fancybox="gallery"]').fancybox({
+        buttons: [
+           "slideShow",
+           "thumbs",
+           "zoom",
+           "fullScreen",
+           "share",
+           "close"
+        ],
+        loop: false,
+        protect: true
+        });
+        jQuery(document).ready(function($) {
+           $(window).scroll(function(event) {
+              $('.fixed-content').scrollTop($(this).scrollTop());
+           });
+        });
+        // test
+        var galleryThumbs = new Swiper('.gallery-thumbs', {
+           effect: 'coverflow',
+           grabCursor: true,
+           centeredSlides: true,
+           slidesPerView: '2',            
+           coverflowEffect: {
+              rotate: 0,
+              stretch: 0,
+              depth: 50,
+              modifier: 6,
+              slideShadows : false,
+           },
+           
+        });  
+        
+        // counter 
+        $('.count').each(function () {
+           $(this).prop('Counter',0).animate({
+              Counter: $(this).text()
+           }, {
+              duration: 15000,
+              easing: 'swing',
+              step: function (now) {
+                    $(this).text(Math.ceil(now));
+              }
+           });
+        });              
+        $(document).ready(function(){
+           $('.codespeedy').hide().delay(3000).fadeIn('slow');
+        });
+        // 
+        // particle.min.js hosted on GitHub
+        !function(a){var b="object"==typeof self&&self.self===self&&self||"object"==typeof global&&global.global===global&&global;"function"==typeof define&&define.amd?define(["exports"],function(c){b.ParticleNetwork=a(b,c)}):"object"==typeof module&&module.exports?module.exports=a(b,{}):b.ParticleNetwork=a(b,{})}(function(a,b){var c=function(a){this.canvas=a.canvas,this.g=a.g,this.particleColor=a.options.particleColor,this.x=Math.random()*this.canvas.width,this.y=Math.random()*this.canvas.height,this.velocity={x:(Math.random()-.5)*a.options.velocity,y:(Math.random()-.5)*a.options.velocity}};return c.prototype.update=function(){(this.x>this.canvas.width+20||this.x<-20)&&(this.velocity.x=-this.velocity.x),(this.y>this.canvas.height+20||this.y<-20)&&(this.velocity.y=-this.velocity.y),this.x+=this.velocity.x,this.y+=this.velocity.y},c.prototype.h=function(){this.g.beginPath(),this.g.fillStyle=this.particleColor,this.g.globalAlpha=.7,this.g.arc(this.x,this.y,1.5,0,2*Math.PI),this.g.fill()},b=function(a,b){this.i=a,this.i.size={width:this.i.offsetWidth,height:this.i.offsetHeight},b=void 0!==b?b:{},this.options={particleColor:void 0!==b.particleColor?b.particleColor:"#34afa9",background:void 0!==b.background?b.background:"#18252b",interactive:void 0!==b.interactive?b.interactive:!0,velocity:this.setVelocity(b.speed),density:this.j(b.density)},this.init()},b.prototype.init=function(){if(this.k=document.createElement("div"),this.i.appendChild(this.k),this.l(this.k,{position:"absolute",top:0,left:0,bottom:0,right:0,"z-index":1}),/(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(this.options.background))this.l(this.k,{background:this.options.background});else{if(!/\.(gif|jpg|jpeg|tiff|png)$/i.test(this.options.background))return console.error("Please specify a valid background image or hexadecimal color"),!1;this.l(this.k,{background:'url("'+this.options.background+'") no-repeat center',"background-size":"cover"})}if(!/(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(this.options.particleColor))return console.error("Please specify a valid particleColor hexadecimal color"),!1;this.canvas=document.createElement("canvas"),this.i.appendChild(this.canvas),this.g=this.canvas.getContext("2d"),this.canvas.width=this.i.size.width,this.canvas.height=this.i.size.height,this.l(this.i,{position:"relative"}),this.l(this.canvas,{"z-index":"1",position:"relative"}),window.addEventListener("resize",function(){return this.i.offsetWidth===this.i.size.width&&this.i.offsetHeight===this.i.size.height?!1:(this.canvas.width=this.i.size.width=this.i.offsetWidth,this.canvas.height=this.i.size.height=this.i.offsetHeight,clearTimeout(this.m),void(this.m=setTimeout(function(){this.o=[];for(var a=0;a<this.canvas.width*this.canvas.height/this.options.density;a++)this.o.push(new c(this));this.options.interactive&&this.o.push(this.p),requestAnimationFrame(this.update.bind(this))}.bind(this),500)))}.bind(this)),this.o=[];for(var a=0;a<this.canvas.width*this.canvas.height/this.options.density;a++)this.o.push(new c(this));this.options.interactive&&(this.p=new c(this),this.p.velocity={x:0,y:0},this.o.push(this.p),this.canvas.addEventListener("mousemove",function(a){this.p.x=a.clientX-this.canvas.offsetLeft,this.p.y=a.clientY-this.canvas.offsetTop}.bind(this)),this.canvas.addEventListener("mouseup",function(a){this.p.velocity={x:(Math.random()-.5)*this.options.velocity,y:(Math.random()-.5)*this.options.velocity},this.p=new c(this),this.p.velocity={x:0,y:0},this.o.push(this.p)}.bind(this))),requestAnimationFrame(this.update.bind(this))},b.prototype.update=function(){this.g.clearRect(0,0,this.canvas.width,this.canvas.height),this.g.globalAlpha=1;for(var a=0;a<this.o.length;a++){this.o[a].update(),this.o[a].h();for(var b=this.o.length-1;b>a;b--){var c=Math.sqrt(Math.pow(this.o[a].x-this.o[b].x,2)+Math.pow(this.o[a].y-this.o[b].y,2));c>120||(this.g.beginPath(),this.g.strokeStyle=this.options.particleColor,this.g.globalAlpha=(120-c)/120,this.g.lineWidth=.7,this.g.moveTo(this.o[a].x,this.o[a].y),this.g.lineTo(this.o[b].x,this.o[b].y),this.g.stroke())}}0!==this.options.velocity&&requestAnimationFrame(this.update.bind(this))},b.prototype.setVelocity=function(a){return"fast"===a?1:"slow"===a?.33:"none"===a?0:.66},b.prototype.j=function(a){return"high"===a?5e3:"low"===a?2e4:isNaN(parseInt(a,10))?1e4:a},b.prototype.l=function(a,b){for(var c in b)a.style[c]=b[c]},b});         
+        var canvasDiv = document.getElementById('particle-canvas');
+        var options = {
+        particleColor: '#34afa9',  
+        interactive: true,
+        speed: 'medium',
+        density: 'high'
+        };
+        var particleCanvas = new ParticleNetwork(canvasDiv, options);
+        // testimonials
+        $(".testimonial-content").owlCarousel({
+           loop: true,
+           items: 2,
+           margin: 50,
+           dots: true,
+           nav: false,
+           mouseDrag: true,
+           autoplay: false,
+           autoplayTimeout: 4000,
+           smartSpeed: 800
+        });
+
+     </script>
 </body>
 
 </html>

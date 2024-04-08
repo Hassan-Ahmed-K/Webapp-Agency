@@ -157,51 +157,51 @@ $('.testimonial_section .wrap_testimonial_section .inner_container').slick({
 });
   
 
-var swiper = new Swiper('.swiper-container',{
-  loop:true,
-  effect:'coverflow',
-  centeredSLide:true,
-  loopFillGroupWithBlank:true,
-  sliderPerView:true,
-  initialSLide: 3,
-  keyboardControl:true,
-  mouseWheelControl:false,
-  lazyLoading:true,
-  spaceBetween:30,
-  pagination: {
-    el : 'swiper-container',
-    clickable:true,
-  },
-  navigation: {
-    nextEl :'.swiper-button-next',
-    prevEl : '.swiper-button-prev'
-  },
+// var swiper = new Swiper('.swiper-container',{
+//   loop:true,
+//   effect:'coverflow',
+//   centeredSLide:true,
+//   loopFillGroupWithBlank:true,
+//   sliderPerView:true,
+//   initialSLide: 3,
+//   keyboardControl:true,
+//   mouseWheelControl:false,
+//   lazyLoading:true,
+//   spaceBetween:30,
+//   pagination: {
+//     el : 'swiper-container',
+//     clickable:true,
+//   },
+//   navigation: {
+//     nextEl :'.swiper-button-next',
+//     prevEl : '.swiper-button-prev'
+//   },
 
-  breakpoints: {
-    1199:{
-      slidesPerView:3,
-      spaceBetween:30,
+//   breakpoints: {
+//     1199:{
+//       slidesPerView:3,
+//       spaceBetween:30,
 
     
-  },
-  991:{
-    slidesPerView:3,
-    spaceBetween:10,
+//   },
+//   991:{
+//     slidesPerView:3,
+//     spaceBetween:10,
   
-  },
-  767:{
-    slidesPerView:2,
-    spaceBetween:10,
+//   },
+//   767:{
+//     slidesPerView:2,
+//     spaceBetween:10,
   
-  },
-  576:{
-    slidesPerView:1,
-    spaceBetween:3,
+//   },
+//   576:{
+//     slidesPerView:1,
+//     spaceBetween:3,
   
-  }
+//   }
 
-}
-})
+// }
+// })
 
 
 // ==============================About Page =================
@@ -247,13 +247,115 @@ $(document).ready(function(){
 });
 })
 
+var hoverd = false;
 
 $(document).ready(function(){
-  $(".mege_menu").click(function(){
-    $(".drop_down").slideToggle();
-    $(".mege_menu p").toggleClass("active");
-    // $(this).toggleClass("active")
-    // console.log("yes")''
+  $(".nav_bar .mege_menu").on("mouseenter", function() {
+    $(".drop_down").slideDown();
+    $(".mege_menu a").addClass("active");
     
-  });
-})
+});
+
+// $(".mege_menu").on("mouseleave", function() {
+//   hoverd = false;
+//   // Add a delay of 500 milliseconds before sliding up
+//   $(".drop_down").mouseenter(function() {
+    
+//     let hoverd = true;
+//     console.log("yes")
+// });
+//   setTimeout(function() {
+//     if(hoverd == false){
+//       $(".drop_down").slideUp();
+//       $(".mege_menu p").removeClass("active");
+//     }
+    
+//   }, 500); 
+// });
+
+$(".nav_bar .drop_down").mouseenter(function() {
+  hovered = true;
+}).mouseleave(function() {
+  hovered = false;
+});
+
+$(".nav_bar .mege_menu").on("mouseleave", function() {
+  setTimeout(function() {
+    if (!hovered) {
+      $(".drop_down").slideUp();
+      $(".mege_menu a").removeClass("active");
+    }
+  }, 200);
+});
+
+
+
+$('.field_detail_section .details').slick({
+  // rtl: true,
+  slidesToShow: 2,
+  slidesToScroll: 2,
+  arrows: false,
+  dots: true,
+  infinite: true,
+  autoplay: true,
+  speed: 500,
+  // centerMode: true,
+  cssEase: 'linear',
+  // variableWidth: true, // Enable variable width slides
+  responsive: [
+    {
+      breakpoint: 881, // Adjust this breakpoint as needed
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }
+  ]
+});
+
+$(".mob_nav .mege_menu").on("click", function() {
+  $(".drop_down").slideToggle();
+  $(".mege_menu p").toggleClass("active");
+  
+});
+
+$(function() {
+	// Reference the tab links.
+	const tabLinks = $('#tab-links li a');
+	
+	// Handle link clicks.
+	tabLinks.click(function(event) {
+		var $this = $(this);
+		
+		// Prevent default click behaviour.
+		event.preventDefault();
+		
+		// Remove the active class from the active link and section.
+		$('#tab-links a.active, section.active').removeClass('active');
+		
+		// Add the active class to the current link and corresponding section.
+		$this.addClass('active');
+		$($this.attr('href')).addClass('active');
+	});
+});
+
+
+
+// $(document).ready(function(){
+//   $('.tab-content:first').addClass('active'); // Show first tab content by default
+//   $('.tab:first').addClass('active'); // Show first tab by default
+
+//   // Click event to switch tabs
+//   $('.tab-link').on('click', function(){
+//     var tab = $(this).data('tab'); // Get the data-tab attribute value of clicked tab
+//     $('.tab').removeClass('active'); // Remove active class from all tabs
+//     $('.tab-content').removeClass('active'); // Remove active class from all tab content
+//     $(this).addClass('active'); // Add active class to clicked tab
+//     $('#' + tab).addClass('active'); // Show tab content corresponding to clicked tab
+//   });
+// });
+
+
+
+
+});
